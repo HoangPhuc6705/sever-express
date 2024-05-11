@@ -7,12 +7,12 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 
-app.post('/crushs', (req, res) => {
+app.post('/', (req, res) => {
   const data = req.body;
   console.log('Data received:', data);
 })
 
-app.get('/crush', (req, res) => {
+app.get('/', (req, res) => {
   const data = req.body;
   res.send(data);
 })
